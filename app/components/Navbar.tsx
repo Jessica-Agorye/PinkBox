@@ -28,7 +28,7 @@ const Navbar = ({ onCategoryChange }) => {
             />
           </div>
 
-          <div className="bg-black text-white px-2 w-full h-10 md:w-40 md:h-12">
+          {/* <div className="bg-black text-white px-2 w-full h-10 md:w-40 md:h-12">
             <label htmlFor="categories">Perfume Categories</label>
             <select name="categories" id="categories" onChange={handleChange}>
               <option value="All">All</option>
@@ -48,7 +48,7 @@ const Navbar = ({ onCategoryChange }) => {
                 Scented Oils
               </option>
             </select>
-          </div>
+          </div> */}
 
           {/* Make this a drop down of available brands */}
         </div>
