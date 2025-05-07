@@ -75,7 +75,7 @@ const PopularProducts = () => {
             setSearchTerm(e.target.value);
             setCurrentPage(1); // Reset to first page on new search
           }}
-          className="w-full md:w-1/2 p-2 border rounded-md shadow-sm"
+          className="focus:w-full  p-2 border rounded-md shadow-sm"
         />
       </div>
 

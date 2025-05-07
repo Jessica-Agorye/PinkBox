@@ -4,14 +4,10 @@ import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 
-const Navbar = ({ onCategoryChange }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleChange = (e) => {
-    const selectedCategory = e.target.value;
-    onCategoryChange(selectedCategory);
-  };
   return (
     <div>
       <nav className=" md:flex md:justify-between mx-2 md:mx-4 mt-4">
@@ -27,30 +23,6 @@ const Navbar = ({ onCategoryChange }) => {
               className="md:hidden "
             />
           </div>
-
-          {/* <div className="bg-black text-white px-2 w-full h-10 md:w-40 md:h-12">
-            <label htmlFor="categories">Perfume Categories</label>
-            <select name="categories" id="categories" onChange={handleChange}>
-              <option value="All">All</option>
-              <option value="Women" className="text-black">
-                Women
-              </option>
-              <option value="Men" className="text-black">
-                Men
-              </option>
-              <option value="Unisex" className="text-black">
-                Unisex
-              </option>
-              <option value="Bodyoil" className="text-black">
-                Bodyoil
-              </option>
-              <option value="Candles" className="text-black">
-                Scented Oils
-              </option>
-            </select>
-          </div> */}
-
-          {/* Make this a drop down of available brands */}
         </div>
         <ul className="hidden md:flex md:gap-2 md:mt-0">
           <li>
